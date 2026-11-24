@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="theme-color" content="#171a1d">
+<title>اتوکار | تعمیرگاه تخصصی خودرو</title>
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Vazirmatn:wght@300;400;500;600;700;800;900&display=swap');
+:root{--bg:#f5f6f7;--ink:#171a1d;--muted:#69727c;--orange:#f07824;--line:#e5e8eb;--dark:#171a1d}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;font-family:'Vazirmatn',Tahoma,sans-serif;background:var(--bg);color:var(--ink);line-height:1.8}a{text-decoration:none;color:inherit}.container{width:min(1120px,calc(100% - 40px));margin:auto}
+header{position:sticky;top:0;z-index:10;background:rgba(23,26,29,.96);backdrop-filter:blur(12px);color:#fff;border-bottom:1px solid #ffffff18}.nav{height:76px;display:flex;align-items:center;justify-content:space-between;gap:24px}.brand{display:flex;align-items:center;gap:11px;font-weight:900;font-size:22px}.brand-mark{width:39px;height:39px;border-radius:12px;background:var(--orange);display:grid;place-items:center;font-size:21px;color:#fff}.navlinks{display:flex;gap:28px;color:#d7dadd;font-size:14px}.navlinks a:hover{color:#fff}.nav-cta,.btn{display:inline-flex;align-items:center;justify-content:center;gap:9px;border:0;border-radius:9px;background:var(--orange);color:#fff;padding:12px 20px;font:700 14px 'Vazirmatn';cursor:pointer;transition:.2s}.nav-cta:hover,.btn:hover{background:#dc6417;transform:translateY(-2px)}
+.hero{background:linear-gradient(90deg,rgba(14,17,20,.94) 0%,rgba(14,17,20,.78) 48%,rgba(14,17,20,.22) 100%),url('https://images.unsplash.com/photo-1486262715619-67b85e0b08d3?auto=format&fit=crop&w=1900&q=85') center/cover;min-height:590px;color:white;display:flex;align-items:center}.hero-content{max-width:620px;padding:90px 0}.eyebrow{color:#ff9a50;font-weight:700;font-size:14px;letter-spacing:.3px}.hero h1{font-size:clamp(34px,5vw,58px);line-height:1.35;margin:15px 0 18px;font-weight:900}.hero p{color:#e0e2e4;font-size:17px;max-width:550px;margin:0 0 30px}.hero-actions{display:flex;gap:12px;flex-wrap:wrap}.btn-outline{border:1px solid #ffffff8a;background:#ffffff12;color:#fff}.btn-outline:hover{background:#ffffff24}.trust{display:flex;gap:28px;margin-top:42px;color:#e1e3e5;font-size:13px;flex-wrap:wrap}.trust span:before{content:'✓';color:#ff9950;font-weight:900;margin-left:8px}
+.stats{background:#fff;border-bottom:1px solid var(--line)}.stats-grid{display:grid;grid-template-columns:repeat(3,1fr);padding:24px 0}.stat{text-align:center;border-left:1px solid var(--line)}.stat:last-child{border:0}.stat strong{display:block;font-size:24px;color:var(--orange);font-weight:900}.stat small{color:var(--muted)}
+section{padding:82px 0}.section-head{text-align:center;max-width:650px;margin:0 auto 42px}.section-head .eyebrow{color:var(--orange)}.section-head h2{font-size:32px;line-height:1.4;margin:8px 0 10px;font-weight:900}.section-head p{color:var(--muted);margin:0}.services{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}.service{background:#fff;border:1px solid var(--line);border-radius:14px;padding:27px;transition:.2s}.service:hover{transform:translateY(-5px);box-shadow:0 14px 35px #17202a0c}.icon{width:49px;height:49px;background:#fff0e6;color:var(--orange);border-radius:12px;display:grid;place-items:center;font-size:24px;margin-bottom:16px}.service h3{font-size:18px;margin:0 0 8px}.service p{font-size:14px;color:var(--muted);margin:0}
+.about{background:#fff}.about-grid{display:grid;grid-template-columns:1fr 1fr;gap:55px;align-items:center}.about-image{height:420px;border-radius:16px;background:url('https://images.unsplash.com/photo-1632823471565-1ecdf5c6f4b2?auto=format&fit=crop&w=1100&q=85') center/cover;position:relative}.image-tag{position:absolute;bottom:22px;right:22px;background:var(--orange);color:white;padding:13px 18px;border-radius:10px;font-weight:800}.about-copy h2{font-size:32px;line-height:1.4;margin:8px 0 15px}.about-copy p{color:var(--muted)}.checks{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-top:25px;font-size:14px;font-weight:600}.checks span:before{content:'✓';color:var(--orange);margin-left:8px;font-weight:900}
+.gallery-grid{display:grid;grid-template-columns:1.3fr 1fr 1fr;grid-template-rows:190px 190px;gap:14px}.gallery-grid img{width:100%;height:100%;object-fit:cover;border-radius:12px}.gallery-grid img:first-child{grid-row:span 2}
+.contact{background:var(--dark);color:#fff}.contact .section-head p{color:#b9c0c6}.contact-grid{display:grid;grid-template-columns:1fr 1fr;gap:24px}.contact-card{background:#22272c;border:1px solid #ffffff14;border-radius:14px;padding:28px}.contact-row{display:flex;gap:15px;align-items:flex-start;padding:14px 0;border-bottom:1px solid #ffffff16}.contact-row:last-child{border:0}.contact-row .icon{flex:none;margin:0}.contact-row strong{display:block}.contact-row small{color:#b7bec4}.map{min-height:330px;border-radius:14px;background:linear-gradient(135deg,#343b40,#22272c);display:grid;place-items:center;text-align:center;padding:30px;color:#c9d0d5}.map .pin{font-size:42px;color:var(--orange)}.map p{max-width:300px}.map a{color:#ff9b54;font-weight:700}
+footer{background:#101214;color:#9ca4ab;padding:23px 0;font-size:13px}.footer-inner{display:flex;justify-content:space-between;gap:15px;flex-wrap:wrap}footer strong{color:#fff}
+@media(max-width:800px){.navlinks{display:none}.hero{min-height:550px}.services{grid-template-columns:repeat(2,1fr)}.about-grid{grid-template-columns:1fr;gap:30px}.about-image{height:330px}.gallery-grid{grid-template-columns:1fr 1fr;grid-template-rows:180px 180px 180px}.gallery-grid img:first-child{grid-row:auto;grid-column:span 2}.contact-grid{grid-template-columns:1fr}}
+@media(max-width:520px){.container{width:min(100% - 28px,1120px)}.nav{height:66px}.brand{font-size:19px}.nav-cta{padding:9px 12px;font-size:12px}.hero{min-height:560px;background-position:58% center}.hero-content{padding:65px 0}.hero p{font-size:15px}.trust{gap:12px}.stats-grid{padding:17px 0}.stat strong{font-size:20px}.stat small{font-size:11px}section{padding:62px 0}.section-head h2,.about-copy h2{font-size:26px}.services{grid-template-columns:1fr}.gallery-grid{gap:9px;grid-template-rows:140px 140px 140px}.checks{grid-template-columns:1fr}}
+</style>
+</head>
+<body>
+<header>
+  <div class="container nav">
+    <a class="brand" href="#home"><span class="brand-mark">⚙</span><span>اتوکار</span></a>
+    <nav class="navlinks"><a href="#home">صفحه اصلی</a><a href="#services">خدمات ما</a><a href="#about">درباره ما</a><a href="#gallery">گالری تصاویر</a><a href="#contact">تماس با ما</a></nav>
+    <a class="nav-cta" href="tel:09120000000">☎ تماس با تعمیرگاه</a>
+  </div>
+</header>
+<main>
+<section class="hero" id="home">
+ <div class="container"><div class="hero-content">
+  <div class="eyebrow">تعمیرگاه خودرو اتوکار</div>
+  <h1>خودروی شما،<br>در دستان متخصصان</h1>
+  <p>از سرویس‌های دوره‌ای تا عیب‌یابی و تعمیرات تخصصی؛ با خیال راحت خودروی خود را به تیم اتوکار بسپارید.</p>
+  <div class="hero-actions"><a class="btn" href="tel:09120000000">☎ دریافت مشاوره تلفنی</a><a class="btn btn-outline" href="#services">مشاهده خدمات</a></div>
+  <div class="trust"><span>پرسنل باتجربه</span><span>تجهیزات به‌روز</span><span>شفافیت در هزینه‌ها</span></div>
+ </div></div>
+</section>
+<div class="stats"><div class="container stats-grid"><div class="stat"><strong>۱۰+</strong><small>سال تجربه (نمونه نمایشی)</small></div><div class="stat"><strong>۱۲۰۰+</strong><small>خودروی سرویس‌شده (نمونه نمایشی)</small></div><div class="stat"><strong>۶ روز</strong><small>در هفته آماده خدمت‌رسانی</small></div></div></div>
+<section id="services"><div class="container">
+ <div class="section-head"><div class="eyebrow">خدمات ما</div><h2>خدماتی برای سلامت خودروی شما</h2><p>خدمات موردنیاز خودروی خود را در یک مجموعه دریافت کنید.</p></div>
+ <div class="services">
+  <article class="service"><div class="icon">⚙</div><h3>عیب‌یابی و دیاگ</h3><p>بررسی خطاهای سیستم خودرو و شناسایی دقیق ایرادهای فنی.</p></article>
+  <article class="service"><div class="icon">🔧</div><h3>تعمیر موتور</h3><p>بررسی و تعمیر مشکلات موتور با رعایت اصول فنی.</p></article>
+  <article class="service"><div class="icon">🛞</div><h3>جلوبندی و تعلیق</h3><p>بررسی سیستم تعلیق، فرمان و رفع صداها و لرزش‌های خودرو.</p></article>
+  <article class="service"><div class="icon">🛢</div><h3>سرویس دوره‌ای</h3><p>تعویض روغن و فیلترها و بررسی اقلام مصرفی خودرو.</p></article>
+  <article class="service"><div class="icon">🔋</div><h3>برق و باتری</h3><p>عیب‌یابی سیستم برق، باتری، استارت و دینام.</p></article>
+  <article class="service"><div class="icon">🚘</div><h3>بازدید فنی خودرو</h3><p>بررسی وضعیت فنی خودرو و ارائه توضیحات پیش از انجام تعمیر.</p></article>
+ </div>
+</div></section>
+<section class="about" id="about"><div class="container about-grid">
+ <div class="about-image"><div class="image-tag">همراه مطمئن خودروی شما</div></div>
+ <div class="about-copy"><div class="eyebrow">درباره اتوکار</div><h2>تعمیر اصولی، خیال آسوده</h2><p>در تعمیرگاه اتوکار تلاش می‌کنیم با بررسی دقیق، توضیح شفاف مشکل و پیشنهاد راهکار مناسب، تجربه‌ای مطمئن از خدمات تعمیر خودرو فراهم کنیم.</p><p>این وب‌سایت یک نمونه نمایشی است و اطلاعات، سوابق و آمار آن فرضی هستند؛ جزئیات واقعی پس از تأیید صاحب تعمیرگاه جایگزین می‌شوند.</p><div class="checks"><span>توضیح پیش از تعمیر</span><span>رعایت اصول فنی</span><span>پاسخ‌گویی محترمانه</span><span>توجه به کیفیت کار</span></div></div>
+</div></section>
+<section id="gallery"><div class="container"><div class="section-head"><div class="eyebrow">گالری تصاویر</div><h2>نگاهی به محیط کار ما</h2><p>تصاویر محیط تعمیرگاه و خدمات ارائه‌شده.</p></div>
+ <div class="gallery-grid">
+  <img src="https://images.unsplash.com/photo-1486262715619-67b85e0b08d3?auto=format&fit=crop&w=1000&q=80" alt="محیط تعمیرگاه خودرو">
+  <img src="https://images.unsplash.com/photo-1632823471565-1ecdf5c6f4b2?auto=format&fit=crop&w=700&q=80" alt="تعمیر خودرو">
+  <img src="https://images.unsplash.com/photo-1625047509248-ec889cbff17f?auto=format&fit=crop&w=700&q=80" alt="تجهیزات تعمیرگاهی">
+  <img src="https://images.unsplash.com/photo-1619642751034-765dfdf7c58e?auto=format&fit=crop&w=700&q=80" alt="سرویس خودرو">
+  <img src="https://images.unsplash.com/photo-1487754180451-c456f719a1fc?auto=format&fit=crop&w=700&q=80" alt="تعمیرکار در حال کار">
+ </div></div></section>
+<section class="contact" id="contact"><div class="container">
+ <div class="section-head"><div class="eyebrow">ارتباط با ما</div><h2>برای دریافت مشاوره با ما تماس بگیرید</h2><p>برای هماهنگی مراجعه یا پرسیدن سؤالات خود با تعمیرگاه در ارتباط باشید.</p></div>
+ <div class="contact-grid">
+  <div class="contact-card">
+   <div class="contact-row"><div class="icon">☎</div><div><strong>شماره تماس</strong><small>۰۹۱۲ ۰۰۰ ۰۰۰۰ (شماره نمونه)</small></div></div>
+   <div class="contact-row"><div class="icon">⌖</div><div><strong>آدرس تعمیرگاه</strong><small>آدرس فرضی؛ محدوده و نشانی واقعی پس از هماهنگی درج می‌شود.</small></div></div>
+   <div class="contact-row"><div class="icon">◷</div><div><strong>ساعات کاری</strong><small>شنبه تا پنجشنبه، ۹ صبح تا ۷ عصر (نمونه)</small></div></div>
+   <a class="btn" style="width:100%;margin-top:20px" href="tel:09120000000">تماس با اتوکار</a>
+  </div>
+  <div class="map"><div><div class="pin">📍</div><strong>موقعیت تعمیرگاه</strong><p>پس از دریافت آدرس دقیق، نقشه و مسیر دسترسی در این قسمت قرار می‌گیرد.</p><a href="https://www.google.com/maps" target="_blank" rel="noopener">مشاهده نقشه ←</a></div></div>
+ </div>
+</div></section>
+</main>
+<footer><div class="container footer-inner"><span>© تمامی حقوق این نمونه برای <strong>اتوکار</strong> محفوظ است.</span><span>طراحی وب‌سایت معرفی کسب‌وکار</span></div></footer>
+</body>
+</html>
